@@ -27,7 +27,7 @@ namespace ConsoleTestExercise
 
             else
             {
-                Console.WriteLine("Type the letter for your prefered exercise E for English, M for Mathematics, and try again");
+                Console.WriteLine("Type the letter for your prefered exercise E for English, M for Mathematics, and try again(Use caps lock!)");
             }
         }
     }

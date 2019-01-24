@@ -10,28 +10,30 @@ namespace ConsoleTestExercise
     {
         public void AgeCheck(int age)
         {
-            do
+            while (true)
             {
                 if (age < 18)
                 {
-                    Console.WriteLine("Sorry, you are disqualified from this test.");
-                    continue;
+                    Console.WriteLine("Sorry, you are disqualified for this test.");
+                    //continue;
+                    Console.ReadLine();
                 }
 
                 else if (age > 18 && age < 40)
                 {
-                    Console.WriteLine("Welcome, get ready for your test");
+                    Console.WriteLine("Welcome, get ready for your test (Press enter!)");
+                    Console.ReadLine();
                     break;
                 }
 
                 else
                 {
-                    Console.WriteLine("Sorry, you are unable to continue now. Please standby for the exercise");
-                    continue;
+                    Console.WriteLine("Sorry, you are unable to continue now. Please standby for the coming exercise");
+                    Console.ReadLine();
                 }
                 // age--; 
             }
-            while (age != 0);
+            
 
 
 
@@ -39,6 +41,7 @@ namespace ConsoleTestExercise
             char exerciseLetter = Convert.ToChar(Console.ReadLine());
 
             var selecto = new OptionSelect();
+            
             selecto.selectOption(exerciseLetter);
         }
     }
