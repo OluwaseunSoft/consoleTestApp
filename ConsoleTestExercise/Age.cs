@@ -15,8 +15,8 @@ namespace ConsoleTestExercise
                 if (age < 18)
                 {
                     Console.WriteLine("Sorry, you are disqualified for this test.");
-                    //continue;
-                    Console.ReadLine();
+                    return;
+                   // Console.ReadLine();
                 }
 
                 else if (age > 18 && age < 40)
@@ -29,7 +29,9 @@ namespace ConsoleTestExercise
                 else
                 {
                     Console.WriteLine("Sorry, you are unable to continue now. Please standby for the coming exercise");
-                    Console.ReadLine();
+                    return;
+                   // Console.ReadLine();
+
                 }
                 // age--; 
             }
